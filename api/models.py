@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 class Candidate(models.Model):
     name = models.CharField(max_length=100, blank=False)
+    email = models.CharField(max_length=100, blank=False)
     number = models.CharField(max_length=100, blank=False)
     rollno = models.CharField(max_length=100, blank=False)
     hallno = models.CharField(max_length=100, blank=False)
