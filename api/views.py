@@ -26,9 +26,15 @@ class register(generics.GenericAPIView):
                 rollno=request.data.get('rollno'),
                 club_preference=request.data.get('club_preference'),
                 roles_preference=request.data.get('roles_preference'),
-                answer_1_text=request.data.get('answer_1_text'),
-                answer_2_text=request.data.get('answer_2_text'),
-                answer_3_text=request.data.get('answer_3_text'),
+                answer_1_text=request.data.get('answer_1_text', ''),
+                answer_2_text=request.data.get('answer_2_text', ''),
+                answer_3_text=request.data.get('answer_3_text', ''),
+                answer_4_text=request.data.get('answer_4_text', ''),
+                answer_5_text=request.data.get('answer_5_text', ''),
+                answer_6_text=request.data.get('answer_6_text', ''),
+                answer_7_text=request.data.get('answer_7_text', ''),
+                answer_8_text=request.data.get('answer_8_text', ''),
+                answer_9_text=request.data.get('answer_9_text', ''),
             )
             return Response({"success": True})
         except IntegrityError as e:
