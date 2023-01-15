@@ -21,7 +21,7 @@ class register(generics.GenericAPIView):
                 email=request.data.get('email'),
                 name=request.data.get('name'),
                 number=request.data.get('number'),
-                section=request.data.get('section'),
+                section=request.data.get('section', ''),
                 hallno=request.data.get('hallno'),
                 rollno=request.data.get('rollno'),
                 club_preference=request.data.get('club_preference'),
